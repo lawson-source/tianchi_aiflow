@@ -1,0 +1,35 @@
+2021-08-21 08:38:42.905038: I tensorflow/core/platform/cpu_feature_guard.cc:145] This TensorFlow binary is optimized with Intel(R) MKL-DNN to use the following CPU instructions in performance critical operations:  SSE4.1 SSE4.2 AVX FMA
+To enable them in non-MKL-DNN operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-08-21 08:38:42.917165: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3099995000 Hz
+2021-08-21 08:38:42.917734: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55fe86c15cd0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-21 08:38:42.917768: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+OMP: Info #155: KMP_AFFINITY: Initial OS proc set respected: 0-5
+OMP: Info #216: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #157: KMP_AFFINITY: 6 available OS procs
+OMP: Info #158: KMP_AFFINITY: Uniform topology
+OMP: Info #287: KMP_AFFINITY: topology layer "LL cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L3 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L2 cache" is equivalent to "core".
+OMP: Info #287: KMP_AFFINITY: topology layer "L1 cache" is equivalent to "core".
+OMP: Info #192: KMP_AFFINITY: 1 socket x 6 cores/socket x 1 thread/core (6 total cores)
+OMP: Info #218: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #172: KMP_AFFINITY: OS proc 0 maps to socket 0 core 0 thread 0 
+OMP: Info #172: KMP_AFFINITY: OS proc 1 maps to socket 0 core 1 thread 0 
+OMP: Info #172: KMP_AFFINITY: OS proc 2 maps to socket 0 core 2 thread 0 
+OMP: Info #172: KMP_AFFINITY: OS proc 3 maps to socket 0 core 3 thread 0 
+OMP: Info #172: KMP_AFFINITY: OS proc 4 maps to socket 0 core 4 thread 0 
+OMP: Info #172: KMP_AFFINITY: OS proc 5 maps to socket 0 core 5 thread 0 
+OMP: Info #254: KMP_AFFINITY: pid 3090 tid 3090 thread 0 bound to OS proc set 0
+2021-08-21 08:38:42.919770: I tensorflow/core/common_runtime/process_util.cc:115] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+OMP: Info #254: KMP_AFFINITY: pid 3090 tid 3120 thread 3 bound to OS proc set 3
+OMP: Info #254: KMP_AFFINITY: pid 3090 tid 3146 thread 4 bound to OS proc set 4
+OMP: Info #254: KMP_AFFINITY: pid 3090 tid 3147 thread 5 bound to OS proc set 5
+OMP: Info #254: KMP_AFFINITY: pid 3090 tid 3148 thread 6 bound to OS proc set 0
+OMP: Info #254: KMP_AFFINITY: pid 3090 tid 3150 thread 8 bound to OS proc set 2
+OMP: Info #254: KMP_AFFINITY: pid 3090 tid 3149 thread 7 bound to OS proc set 1
+OMP: Info #254: KMP_AFFINITY: pid 3090 tid 3121 thread 9 bound to OS proc set 3
+OMP: Info #254: KMP_AFFINITY: pid 3090 tid 3159 thread 10 bound to OS proc set 4
+OMP: Info #254: KMP_AFFINITY: pid 3090 tid 3160 thread 11 bound to OS proc set 5
+OMP: Info #254: KMP_AFFINITY: pid 3090 tid 3161 thread 12 bound to OS proc set 0
+OMP: Info #254: KMP_AFFINITY: pid 3090 tid 3162 thread 13 bound to OS proc set 1
+OMP: Info #254: KMP_AFFINITY: pid 3090 tid 3163 thread 14 bound to OS proc set 2
