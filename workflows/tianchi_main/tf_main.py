@@ -4,6 +4,7 @@ from tensorflow import keras
 from tensorflow.python.framework.graph_util import convert_variables_to_constants
 import numpy as np
 from sklearn.metrics import average_precision_score
+import pandas as pd
 import os
 import tempfile
 import logging
@@ -11,11 +12,12 @@ import traceback
 import datetime
 import json
 
+
 tf.get_logger().setLevel('ERROR')
 
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s %(levelname)s]\t%(message)s')
 
-
+"""
 def export_tf(sess, export_dir, model_name, input_names, output_names):
     output_graph_def = convert_variables_to_constants(sess,
                                                       sess.graph_def,
@@ -109,7 +111,7 @@ def train(train_path, model_dir, save_name):
     nClasses=2
     reg_weight=0.01
     num_epochs=100
-    input_dim=3
+    input_dim=75
     lr=0.0005
     batch_size=4096
 
@@ -206,7 +208,9 @@ def train(train_path, model_dir, save_name):
         writer.close()
 
 """
-def make_model(metrics=METRICS, output_bias=None):
+
+
+def make_model(metrics, output_bias=None):
     if output_bias is not None:
         output_bias = tf.keras.initializers.Constant(output_bias)
     model = keras.Sequential([
@@ -287,7 +291,8 @@ def train(train_path, model_dir, save_name):
         epochs=EPOCHS,
         callbacks=[early_stopping,cp_callback],
         validation_data=(val_features, val_labels))
-"""
+
+
 
 def metrics(labels, preds):
     # labels: 0/1
